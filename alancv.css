@@ -1,0 +1,75 @@
+/*Alan's cv*/
+
+body {
+      background-color: #FFFFFF;
+      color: #000000;
+      border: none;
+      margin-left:0px;
+      font-family: Arial, Helvetica, sans-serif;
+}
+  
+header img.headerphoto {
+    float: right;
+    margin: 0 0 5px 10px;
+}
+
+h1 {
+    text-align:center;
+    color:#4169E1;
+}
+
+h3 {
+    text-align:center;
+    color: none;
+}
+
+nav {
+     display: inline-block;
+     width: 100%;
+     height: auto;
+     background-color:lightgrey;
+     padding:10px;
+}
+  
+nav a.active {
+    background-color: royalblue; color: #FFFFFF;
+}
+
+a {
+   margin: 0px 25px 0px 25px;
+}
+
+a:link, a:visited {
+  background-color: #FFFFFF;
+  color: #4169E1;
+  border:1px solid #4169E1; 
+  border-radius:20px; 
+  padding:5px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #4169E1;
+  color: #FFFFFF;
+}
+
+a:active {
+  background-color: lightblue;
+  color: #FFFFFF;
+}
+
+h2 {
+   color:#4169E1;
+   margin-left: 20px;
+}
+
+li {
+    padding: 5px;
+}
+
+footer {
+    width:100%;
+     background-color:lightgrey;
+     padding: 0px 0px 0px 20px; 
+    
+}
