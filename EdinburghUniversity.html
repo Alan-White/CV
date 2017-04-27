@@ -2,14 +2,15 @@
 <html>
 
 <head>
-  <title>Alan's cv</title>
+  <title>EU Practice</title>
   <link rel="stylesheet" type="text/css" href="alancv.css">
   <style>
+
   </style>
   <script>The *script* element is used to define client-side JavaScripts.</script>
   <base https://alan-white.github.io/CV/index.html/>
   <meta charset="UTF-8">
-  <meta name="description" content="Alan's notes from W3Schools HTML tutorial">
+  <meta name="description" content="Alan's cv / Edinburgh University">
   <meta name="keywords" content="HTML,CSS,XML,JavaScript,Alan">
   <meta name="author" content="Alan White">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,17 +27,17 @@
     <li>email: alanwhitey@gmail.com</li>
     <li>mobile: 07971570832</li>
   </ul>
-    
+
   <img src="alanphoto.jpg" alt="photo of Alan" style="width:200px; height:auto;"/>
 
   <h1>Alan White</h1>
-  
-  <h3>Software development student at CodeClan.</h3>  
-  
+
+  <h3>Software development student at CodeClan.</h3>
+
 </header>
 
-  
-  <nav>
+
+<nav>
     <a href="index.html" target="_self">Cover Letter</a>
     <a href="alancv.html" target="_self">Alan's cv</a>
     <a class="active" href="EdinburghUniversity.html" target="_self">Edinburgh University</a>
@@ -44,13 +45,15 @@
     <a href="RAFMRT.html" target="_self">RAF Mountain Rescuer</a>
     <a href="ExpeditionLeader.html" target="_self">Expedition Leader</a>
     <a href="abseiler.html" target="_self">Abseiler</a>
-  </nav>
+    <a href="sports/interests.html" target="_self">Sports/Interests</a>
 
-  
+</nav>
+
+<div class=rwd>
 <h2>Edinburgh University, 1994 - 1998.  BSc(hons), 2:1.</h2>
 
   <ul>
-    <li><b>4th year</b>:</li> 
+    <li><b>4th year</b>:</li>
       <ul>
         <li>Igneous petrology</li>
         <li>Metamorphic petrology</li>
@@ -61,23 +64,57 @@
         <li>Geology</li>
       </ul>
 
-    <li><b>2nd year</b></li> 
+    <li><b>2nd year</b></li>
       <ul>
         <li>Geology</li>
         <li>Geography</li>
         <li>Meteorology</li>
         <li>Oceanography</li>
       </ul>
-    <li><b>1st year</b></li> 
+    <li><b>1st year</b></li>
       <ul>
         <li>Geology</li>
         <li>Geography</li>
         <li>Scottish History</li>
       </ul>
   </ul>
+</div>
+
+<div class=rwd>
+<h2>University Certificates</h2>
+
+<div>
+  <img class="mySlides" src="GeologyDegree.jpg" style="width:100%">
+  <img class="mySlides" src="AccessUni.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+</div>
+
 <br/>
 
-<footer>
+<footer style="clear: left;">
   <p>Contact: Alan White, 07971570832, alanwhitey@gmail.com</p>
   <p> These webpages have been created by Alan, before starting the CodeClan course.</p>
 </footer>

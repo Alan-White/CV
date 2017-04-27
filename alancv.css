@@ -4,17 +4,19 @@ body {
     background-color: #FFFFFF;
     color: #000000;
     border: none;
-    margin:0px;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
-  
+
+p {padding-left: 10px}
+
 header {
-    display:inline-block; 
+    display:inline-block;
     position: static;
     width: 100%;
     margin: 10px 0px 0px 0px;
 }
-  
+
 header ul {
     float: left;
     margin: 0px 0px 0px 0px;
@@ -30,9 +32,24 @@ header img {
     margin: 0 10px 5px 10px;
 }
 
+.rwd {
+  float: left;
+  margin: 20px 0px 20px 40px;
+  padding: 0 15px 0 15px;
+  max-width: 600px;
+  height: auto;
+  border: 1px solid black;
+  }
+
 h1 {
     text-align:center;
     color:#4169E1;
+}
+
+h2 {
+    text-align:center;
+    color:#4169E1;
+    margin-left: 0px;
 }
 
 h3 {
@@ -50,9 +67,9 @@ nav {
 
 nav a {
     display: inline-block;
-    margin: 10px 25px 0px 25px;
+    margin: 10px 20px 0px 20px;
 }
-  
+
 nav a.active {
     background-color: royalblue; color: #FFFFFF;
 }
@@ -60,8 +77,8 @@ nav a.active {
 a:link, a:visited {
     background-color: #FFFFFF;
     color: #4169E1;
-    border:1px solid #4169E1; 
-    border-radius:20px; 
+    border:1px solid #4169E1;
+    border-radius:20px;
     padding:5px;
     text-decoration: none;
 }
@@ -76,18 +93,14 @@ a:active {
     color: #FFFFFF;
 }
 
-h2 {
-    color:#4169E1;
-    margin-left: 20px;
-}
-
 li {
     padding: 5px;
 }
 
 footer {
+    clear: left;
     width:100%;
     background-color:lightgrey;
-    padding: 0px 0px 0px 20px; 
-    
+    padding: 1px 0px 1px 0px;
+
 }
