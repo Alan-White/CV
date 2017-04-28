@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Alan's cv, Sports/Interests</title>
+  <link rel="stylesheet" type="text/css" href="alancv.css">
+  <style>
+
+  </style>
+  <script>The *script* element is used to define client-side JavaScripts.</script>
+  <base https://alan-white.github.io/CV/index.html/>
+  <meta charset="UTF-8">
+  <meta name="description" content="Alan's cv / Sports and Interests">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript,Alan">
+  <meta name="author" content="Alan White">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="30">
+</head>
+
+<body>
+
+<header>
+  <ul>
+    <li>Alan White</li>
+    <li>born: 9th September 1967</li>
+    <li>address: Glenrothes, Scotland</li>
+    <li>email: alanwhitey@gmail.com</li>
+    <li>mobile: 07971570832</li>
+  </ul>
+
+  <img src="alanphoto.jpg" alt="photo of Alan" style="width:200px; height:auto;"/>
+
+  <h1>Alan White</h1>
+
+  <h3>Software development student at CodeClan.</h3>
+
+</header>
+
+
+<nav>
+    <a href="index.html" target="_self">Cover Letter</a>
+    <a href="alancv.html" target="_self">Alan's cv</a>
+    <a href="EdinburghUniversity.html" target="_self">Edinburgh University</a>
+    <a href="RAFPhotographer.html" target="_self">RAF Photographer</a>
+    <a href="RAFMRT.html" target="_self">RAF Mountain Rescuer</a>
+    <a href="ExpeditionLeader.html" target="_self">Expedition Leader</a>
+    <a href="abseiler.html" target="_self">Abseiler</a>
+    <a class="active" href="SportsInterests.html" target="_self">Sports/Interests</a>
+
+</nav>
+
+<div class=rwd>
+
+  <h2>Sports and Interests.</h2>
+
+    <p>Over the years I've kept active through mountaineering, hill running, road running, mountain biking, road cycling, quadrathlon, triathlon, circuit trainig and swimming.</p>
+
+    <p>These days it's mostly road/path cycling, swimming and circuit training, but I hope to get out on the hills again, with my family, when my daughter is a bit older.</p>
+
+    <p><b>Photography</b> is now a hobby for me.  I use a Sony Alpha 6000.
+      It's not a professional camera or even a DSLR, but it combines good quality images with a small sized, easy to carry camera.
+      I also use an app to make digital photo's look like paintings or sketches.  I've included a few in the slide show on this page.</p>
+
+    <p><b>Travel</b> I've been to quite a few places through work, expeditions and holidays.
+      More recently I've been travelling with my family to France in the summer (a road trip in our van with bikes and camping kit) and
+      Mallorca in October for relaxing mainly, but also a bit of cycling and running.</p>
+
+    <p><b>Coding, web design....</b>A combination of; buying a MacBook Air, wanting to record and present my own interest(travel and photography)
+      and attending the 'hour of code' event (Carleton Primary School in December 2016) have led to my new interest in coding which I hope will lead to a new career.
+      I will be starting CodeClan's 16 week course in May 2017.</p>
+
+</div>
+
+<div class=rwd>
+<h2>Sports and Interests photo's.</h2>
+
+<div>
+  <img class="mySlides" src="sport1.jpg" style="width:100%">
+  <img class="mySlides" src="sport2.jpg" style="width:100%">
+  <img class="mySlides" src="sport3.jpg" style="width:100%">
+  <img class="mySlides" src="sport4.jpg" style="width:100%">
+  <img class="mySlides" src="sport5.jpg" style="width:100%">
+  <img class="mySlides" src="sport6.jpg" style="width:100%">
+  <img class="mySlides" src="sport7.jpg" style="width:100%">
+  <img class="mySlides" src="sport8.jpg" style="width:100%">
+  <img class="mySlides" src="sport9.jpg" style="width:100%">
+  <img class="mySlides" src="sport10.jpg" style="width:100%">
+  <img class="mySlides" src="sport11.jpg" style="width:100%">
+  <img class="mySlides" src="sport12.jpg" style="width:100%">
+  <img class="mySlides" src="sport13.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+</div>
+
+<br/>
+
+<footer style="clear: left;">
+  <p>Contact: Alan White, 07971570832, alanwhitey@gmail.com</p>
+  <p> These webpages have been created by Alan, before starting the CodeClan course.</p>
+</footer>
+</body>
+</html>
